@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cossette+Titre:wght@400;700&family=Lavishly+Yours&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid blue; */
+}
+
+:root {
+    --length-50p:50%;
+    --length-100p:100%;
+    --length-90p:90%;
+    --length-500:500px;
+    --length-200:200px;
+    --length-100:100px;
+    --length-150:150px;
+    --length-50:50px;
+
+    --fs-small:1em;
+    --fs-medium:1.5em;
+    --fs-large:2em;
+    --fs-xlarge:5em;
+
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+    width: var(--length-50p);
+}
+
+#banner {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    /* outline: 2px solid lime; */
+    overflow: hidden;
+    & img {
+        width: inherit;
+        object-fit: contain;
+        opacity: 0.9;
+        mask-image: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+    }
+      
+    & h2 {
+    padding-left: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: clamp(2rem, 5vw, 5rem);
+    color: white;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.438) 70%, transparent);
+    mask-image: linear-gradient(90deg, transparent, white 10%, white 90%, transparent)
+    }
+}
+
+#categoryText {
+    font-size: clamp(1.2rem, 2vw, 3rem);
+    margin-block:2rem ;
+    width: 100%;
+    border-top: 1px solid black;
+    border-bottom:1px  solid black;
+}
+
+.productContainer {
+    flex-direction: row;
+    border-bottom: 1px solid black;
+    margin-block: 10px;
+    padding: 20px;
+}
+
+.imgBox {
+    width: var(--length-200);
+
+    & img {
+        width: inherit;
+        aspect-ratio: 1/1;
+    }
+}
+
+.descriptionBox {
+    height: 100%;
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    flex-direction: column;
+    padding-inline: 2rem;
+
+    & h2 {
+        font-size: clamp(1rem, 2vw, 2.5rem);
+    }
+
+    & .productDescription {
+        height: 50px;
+        overflow: scroll;
+        scrollbar-width: none;
+        mask-image: linear-gradient(white 90%, transparent);
+    }
+
+    & .ctaButton {
+        height: 50px;
+        width: 150px;
+        border-radius: 50px;
+        background-color: yellow;
+        font-size: var(--fs-small);
+        border: none;
+        margin-block-start: 10px;
+    }
+}

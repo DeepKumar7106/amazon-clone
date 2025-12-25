@@ -4,10 +4,26 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/category.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>amazon-clone</title>
   </head>
-  <body>
+  <body class="center">
+    <!-- header section -->
+    <header class="center">
+      <div id="nav" >
+        <div id="logo">a->z</div>
+        <input type="search" name="" id="search-box">
+        <div id="cart">cart</div>
+    </div>
+      <ul id="categoryList" class="center"></ul>
+    </header>
+
+    <!-- main content -->
+     <main class="center">
+      <h1>Categories</h1>
+      <section id="categoryContainer"></section>
+     </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
