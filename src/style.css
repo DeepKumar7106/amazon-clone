@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     /* outline: 1px solid blue; */
+    user-select: none;
 }
 
 :root {
@@ -51,6 +52,13 @@ header {
   width: var(--length-50p);
   display: flex;
   justify-content: space-between;
+}
+
+#categoryList {
+  flex-direction: row;
+  list-style: none;
+  gap: 15px;
+  margin-top: 10px;
 }
 
 main {

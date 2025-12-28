@@ -568,3 +568,28 @@ export const products = [
         src: "src/footwear/kidsGirl.jpg"
     },
 ]
+
+//cart related stuff
+const CART_KEY = "cart"
+
+export const getCart = () => {
+    return JSON.parse(sessionStorage.getItem(CART_KEY));
+};
+
+// export const cartAdd = (id) =>{
+//     const cart = getCart();
+//     cart.push(id)
+//     console.log(cart)
+//     sessionStorage.setItem(CART_KEY,JSON.stringify(cart))
+// }
+
+// export const cartRemove = (id) => {
+//     const cart = getCart();
+//     const index = cart.indexOf(id);
+//     if(index !== -1)
+//         cart.splice(index, 1); //removes the said item
+    
+//     sessionStorage.setItem(CART_KEY,JSON.stringify(cart))
+// }
+
+

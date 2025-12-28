@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>amazon-clone</title>
+  </head>
+  <body class="center">
+    <!-- header section -->
+    <header class="center">
+      <div id="nav" >
+        <div id="logo" >a->z</div>
+        <input type="search" name="" id="search-box">
+        <div id="cart">cart</div>
+      </div>
+      <ul id="categoryList" class="center"></ul>
+    </header>
+    
+    <!-- main content -->
+    <main class="center" id="mainBox">
+      <h2>Your cart</h2>
+        <div class="checkoutWrapper center">
+          <section id="cartList" class="center">
+
+          </section>
+          <div id="checkout">
+            <h2>Your subtotal</h2>
+            <p id="totalText">Sub Total is 2999</p>
+            <button id="orderPlaced">Checkout</button>
+          </div>
+        </div>
+      </main>
+      <script type="module" src="cart.js"></script>
+  </body>
+</html>
