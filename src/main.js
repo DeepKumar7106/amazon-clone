@@ -83,5 +83,5 @@ document.querySelectorAll('.navLI').forEach(item => {
 
 
 document.getElementById('cart').addEventListener('click', () => {
-  window.location.href = '../src/cart.html'
+  window.location.href = './src/cart.html'
 })
