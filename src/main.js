@@ -1,5 +1,5 @@
-import { categories } from "./data";
-import { renderMain } from "./category";
+import { categories } from "./data.js";
+import { renderMain } from "./category.js";
 // import { renderCartList } from "./cart";
 
 // render categories in home page

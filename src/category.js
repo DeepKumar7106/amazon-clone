@@ -1,4 +1,4 @@
-import { categories } from "./data";
+import { categories } from "./data.js";
 // import {} from "./cart.js"
 
 async function getProduct() {
